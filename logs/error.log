@@ -1,0 +1,33 @@
+2025-10-20 12:31:47 [ERROR] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 ConsumerCoordinator.java:301 org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [Consumer clientId=consumer-sink-2, groupId=sink] User provided listener org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer$ListenerConsumerRebalanceListener failed on invocation of onPartitionsAssigned for partitions [matrix-1]
+org.apache.kafka.common.errors.TimeoutException: Timeout of 60000ms expired before the position for partition matrix-1 could be determined
+2025-10-20 12:31:47 [ERROR] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 ConsumerCoordinator.java:301 org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [Consumer clientId=consumer-sink-3, groupId=sink] User provided listener org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer$ListenerConsumerRebalanceListener failed on invocation of onPartitionsAssigned for partitions [matrix-2]
+org.apache.kafka.common.errors.TimeoutException: Timeout of 60000ms expired before the position for partition matrix-2 could be determined
+2025-10-20 12:31:47 [ERROR] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 ConsumerCoordinator.java:301 org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [Consumer clientId=consumer-sink-4, groupId=sink] User provided listener org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer$ListenerConsumerRebalanceListener failed on invocation of onPartitionsAssigned for partitions [matrix-3]
+org.apache.kafka.common.errors.TimeoutException: Timeout of 60000ms expired before the position for partition matrix-3 could be determined
+2025-10-20 12:31:47 [ERROR] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 LogAccessor.java:149 org.springframework.kafka.listener.KafkaMessageListenerContainer Consumer exception
+java.lang.IllegalStateException: This error handler cannot process 'org.apache.kafka.common.errors.TimeoutException's; no record information is available
+	at org.springframework.kafka.listener.DefaultErrorHandler.handleOtherException(DefaultErrorHandler.java:157)
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.handleConsumerException(KafkaMessageListenerContainer.java:1814)
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.run(KafkaMessageListenerContainer.java:1303)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.kafka.common.errors.TimeoutException: Timeout of 60000ms expired before the position for partition matrix-3 could be determined
+2025-10-20 12:31:47 [ERROR] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 LogAccessor.java:149 org.springframework.kafka.listener.KafkaMessageListenerContainer Consumer exception
+java.lang.IllegalStateException: This error handler cannot process 'org.apache.kafka.common.errors.TimeoutException's; no record information is available
+	at org.springframework.kafka.listener.DefaultErrorHandler.handleOtherException(DefaultErrorHandler.java:157)
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.handleConsumerException(KafkaMessageListenerContainer.java:1814)
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.run(KafkaMessageListenerContainer.java:1303)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.kafka.common.errors.TimeoutException: Timeout of 60000ms expired before the position for partition matrix-1 could be determined
+2025-10-20 12:31:47 [ERROR] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 LogAccessor.java:149 org.springframework.kafka.listener.KafkaMessageListenerContainer Consumer exception
+java.lang.IllegalStateException: This error handler cannot process 'org.apache.kafka.common.errors.TimeoutException's; no record information is available
+	at org.springframework.kafka.listener.DefaultErrorHandler.handleOtherException(DefaultErrorHandler.java:157)
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.handleConsumerException(KafkaMessageListenerContainer.java:1814)
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.run(KafkaMessageListenerContainer.java:1303)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.kafka.common.errors.TimeoutException: Timeout of 60000ms expired before the position for partition matrix-2 could be determined

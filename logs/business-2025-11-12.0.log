@@ -1,0 +1,1471 @@
+2025-11-12 10:33:49 [INFO ] main StartupInfoLogger.java:55 com.mobile.outalarm2.OutAlarm2Application Starting OutAlarm2Application using Java 1.8.0_191 on zhenghao with PID 40388 (D:\work\2025\08\outalarm2-test\target\classes started by 47480 in D:\work\2025\08\outalarm2-test)
+2025-11-12 10:33:49 [INFO ] main SpringApplication.java:651 com.mobile.outalarm2.OutAlarm2Application The following 1 profile is active: "test"
+2025-11-12 10:33:50 [INFO ] main TomcatWebServer.java:108 org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8090 (http)
+2025-11-12 10:33:50 [INFO ] main DirectJDKLog.java:173 org.apache.catalina.core.AprLifecycleListener Loaded Apache Tomcat Native library [1.3.1] using APR version [1.7.4].
+2025-11-12 10:33:50 [INFO ] main DirectJDKLog.java:173 org.apache.catalina.core.AprLifecycleListener APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2025-11-12 10:33:50 [INFO ] main DirectJDKLog.java:173 org.apache.catalina.core.AprLifecycleListener APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2025-11-12 10:33:50 [INFO ] main DirectJDKLog.java:173 org.apache.catalina.core.AprLifecycleListener OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+2025-11-12 10:33:50 [INFO ] main DirectJDKLog.java:173 org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8090"]
+2025-11-12 10:33:50 [INFO ] main DirectJDKLog.java:173 org.apache.catalina.core.StandardService Starting service [Tomcat]
+2025-11-12 10:33:50 [INFO ] main DirectJDKLog.java:173 org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-11-12 10:33:50 [INFO ] main DirectJDKLog.java:173 org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2025-11-12 10:33:50 [INFO ] main ServletWebServerApplicationContext.java:290 org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 1226 ms
+2025-11-12 10:33:50 [INFO ] main DruidDataSourceAutoConfigure.java:56 com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure Init DruidDataSource
+2025-11-12 10:33:50 [INFO ] main DruidDataSource.java:985 com.alibaba.druid.pool.DruidDataSource {dataSource-1} inited
+2025-11-12 10:33:51 [INFO ] main AbstractConfig.java:376 org.apache.kafka.clients.consumer.ConsumerConfig ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = earliest
+	bootstrap.servers = [10.209.44.87:9092, 10.209.44.103:9092, 10.209.44.114:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-test3-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 5000
+	fetch.min.bytes = 1895825408
+	group.id = test3
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-11-12 10:33:51 [INFO ] main AppInfoParser.java:119 org.apache.kafka.common.utils.AppInfoParser Kafka version: 3.0.2
+2025-11-12 10:33:51 [INFO ] main AppInfoParser.java:120 org.apache.kafka.common.utils.AppInfoParser Kafka commitId: 25b1aea02e37da14
+2025-11-12 10:33:51 [INFO ] main AppInfoParser.java:121 org.apache.kafka.common.utils.AppInfoParser Kafka startTimeMs: 1762914831814
+2025-11-12 10:33:51 [INFO ] main KafkaConsumer.java:966 org.apache.kafka.clients.consumer.KafkaConsumer [Consumer clientId=consumer-test3-1, groupId=test3] Subscribed to topic(s): asap_superset
+2025-11-12 10:33:51 [INFO ] main AbstractConfig.java:376 org.apache.kafka.clients.consumer.ConsumerConfig ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = earliest
+	bootstrap.servers = [10.209.44.87:9092, 10.209.44.103:9092, 10.209.44.114:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-test3-2
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 5000
+	fetch.min.bytes = 1895825408
+	group.id = test3
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-11-12 10:33:51 [INFO ] main AppInfoParser.java:119 org.apache.kafka.common.utils.AppInfoParser Kafka version: 3.0.2
+2025-11-12 10:33:51 [INFO ] main AppInfoParser.java:120 org.apache.kafka.common.utils.AppInfoParser Kafka commitId: 25b1aea02e37da14
+2025-11-12 10:33:51 [INFO ] main AppInfoParser.java:121 org.apache.kafka.common.utils.AppInfoParser Kafka startTimeMs: 1762914831829
+2025-11-12 10:33:51 [INFO ] main KafkaConsumer.java:966 org.apache.kafka.clients.consumer.KafkaConsumer [Consumer clientId=consumer-test3-2, groupId=test3] Subscribed to topic(s): asap_superset
+2025-11-12 10:33:51 [INFO ] main AbstractConfig.java:376 org.apache.kafka.clients.consumer.ConsumerConfig ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = earliest
+	bootstrap.servers = [10.209.44.87:9092, 10.209.44.103:9092, 10.209.44.114:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-test3-3
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 5000
+	fetch.min.bytes = 1895825408
+	group.id = test3
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-11-12 10:33:51 [INFO ] main AppInfoParser.java:119 org.apache.kafka.common.utils.AppInfoParser Kafka version: 3.0.2
+2025-11-12 10:33:51 [INFO ] main AppInfoParser.java:120 org.apache.kafka.common.utils.AppInfoParser Kafka commitId: 25b1aea02e37da14
+2025-11-12 10:33:51 [INFO ] main AppInfoParser.java:121 org.apache.kafka.common.utils.AppInfoParser Kafka startTimeMs: 1762914831834
+2025-11-12 10:33:51 [INFO ] main KafkaConsumer.java:966 org.apache.kafka.clients.consumer.KafkaConsumer [Consumer clientId=consumer-test3-3, groupId=test3] Subscribed to topic(s): asap_superset
+2025-11-12 10:33:51 [INFO ] main AbstractConfig.java:376 org.apache.kafka.clients.consumer.ConsumerConfig ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = earliest
+	bootstrap.servers = [10.209.44.87:9092, 10.209.44.103:9092, 10.209.44.114:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-test3-4
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 5000
+	fetch.min.bytes = 1895825408
+	group.id = test3
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-11-12 10:33:51 [INFO ] main AppInfoParser.java:119 org.apache.kafka.common.utils.AppInfoParser Kafka version: 3.0.2
+2025-11-12 10:33:51 [INFO ] main AppInfoParser.java:120 org.apache.kafka.common.utils.AppInfoParser Kafka commitId: 25b1aea02e37da14
+2025-11-12 10:33:51 [INFO ] main AppInfoParser.java:121 org.apache.kafka.common.utils.AppInfoParser Kafka startTimeMs: 1762914831845
+2025-11-12 10:33:51 [INFO ] main KafkaConsumer.java:966 org.apache.kafka.clients.consumer.KafkaConsumer [Consumer clientId=consumer-test3-4, groupId=test3] Subscribed to topic(s): asap_superset
+2025-11-12 10:33:51 [INFO ] main AbstractConfig.java:376 org.apache.kafka.clients.consumer.ConsumerConfig ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = earliest
+	bootstrap.servers = [10.209.44.87:9092, 10.209.44.103:9092, 10.209.44.114:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-test3-5
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 5000
+	fetch.min.bytes = 1895825408
+	group.id = test3
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-11-12 10:33:51 [INFO ] main AppInfoParser.java:119 org.apache.kafka.common.utils.AppInfoParser Kafka version: 3.0.2
+2025-11-12 10:33:51 [INFO ] main AppInfoParser.java:120 org.apache.kafka.common.utils.AppInfoParser Kafka commitId: 25b1aea02e37da14
+2025-11-12 10:33:51 [INFO ] main AppInfoParser.java:121 org.apache.kafka.common.utils.AppInfoParser Kafka startTimeMs: 1762914831849
+2025-11-12 10:33:51 [INFO ] main KafkaConsumer.java:966 org.apache.kafka.clients.consumer.KafkaConsumer [Consumer clientId=consumer-test3-5, groupId=test3] Subscribed to topic(s): asap_superset
+2025-11-12 10:33:51 [INFO ] main AbstractConfig.java:376 org.apache.kafka.clients.consumer.ConsumerConfig ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = earliest
+	bootstrap.servers = [10.209.44.87:9092, 10.209.44.103:9092, 10.209.44.114:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-test3-6
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 5000
+	fetch.min.bytes = 1895825408
+	group.id = test3
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-11-12 10:33:51 [INFO ] main AppInfoParser.java:119 org.apache.kafka.common.utils.AppInfoParser Kafka version: 3.0.2
+2025-11-12 10:33:51 [INFO ] main AppInfoParser.java:120 org.apache.kafka.common.utils.AppInfoParser Kafka commitId: 25b1aea02e37da14
+2025-11-12 10:33:51 [INFO ] main AppInfoParser.java:121 org.apache.kafka.common.utils.AppInfoParser Kafka startTimeMs: 1762914831853
+2025-11-12 10:33:51 [INFO ] main KafkaConsumer.java:966 org.apache.kafka.clients.consumer.KafkaConsumer [Consumer clientId=consumer-test3-6, groupId=test3] Subscribed to topic(s): asap_superset
+2025-11-12 10:33:51 [INFO ] main DirectJDKLog.java:173 org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8090"]
+2025-11-12 10:33:51 [INFO ] main TomcatWebServer.java:220 org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8090 (http) with context path ''
+2025-11-12 10:33:51 [INFO ] main StartupInfoLogger.java:61 com.mobile.outalarm2.OutAlarm2Application Started OutAlarm2Application in 2.911 seconds (JVM running for 3.717)
+2025-11-12 10:34:00 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:34:00 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:34:01 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:34:01 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:34:02 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:34:03 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:34:08 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:34:10 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:34:11 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:34:11 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:34:12 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:34:14 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:34:18 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:34:20 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:34:20 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:34:21 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:34:22 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:34:23 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:34:36 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:34:37 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:34:39 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:34:41 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:34:41 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:34:44 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:34:44 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:34:44 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:34:44 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:34:55 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:34:57 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:34:57 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:35:00 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:35:00 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:35:00 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:35:03 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:35:05 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:35:05 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:35:13 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:35:13 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:35:20 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:35:21 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:35:24 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:35:24 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:35:25 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:35:35 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:35:35 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:35:35 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:35:35 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:35:41 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:35:41 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:35:42 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:35:42 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:35:46 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:35:46 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:35:47 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:35:47 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:35:56 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:35:56 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:35:56 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:35:56 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:36:02 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:36:02 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:36:03 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:36:03 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:36:07 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:36:07 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:36:08 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:36:08 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:36:17 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:36:17 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:36:17 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:36:17 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:36:24 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:36:24 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:36:25 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:36:25 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:36:28 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:36:28 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:36:29 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:36:29 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:36:38 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:36:38 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:36:38 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:36:38 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:36:45 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:36:45 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:36:46 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:36:46 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:36:49 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:36:49 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:36:50 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:36:50 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:36:59 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:36:59 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:36:59 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:36:59 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:37:06 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:37:06 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:37:07 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:37:07 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:37:10 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:37:10 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:37:11 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:37:11 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:37:20 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:37:20 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:37:20 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:37:20 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:37:27 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:37:27 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:37:28 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:37:28 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:37:31 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:37:31 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:37:32 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:37:32 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:37:42 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:37:42 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:37:42 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:37:42 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:37:48 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:37:48 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:37:49 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:37:49 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:37:53 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:37:53 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:37:53 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:37:53 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:38:03 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:38:03 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:38:03 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:38:03 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:38:09 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:38:09 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:38:10 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:38:10 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:38:14 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:38:14 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:38:14 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:38:14 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:38:24 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:38:24 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:38:24 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:38:24 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:38:30 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:38:30 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:38:32 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:38:32 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:38:35 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:38:35 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:38:36 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:38:36 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:38:45 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:38:45 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:38:45 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:38:45 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:38:52 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:38:52 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:38:53 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:38:53 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:38:56 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:38:56 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:38:57 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:38:57 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:39:06 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:39:06 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:39:06 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:39:06 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:39:13 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:39:13 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:39:14 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:39:14 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:39:17 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:39:17 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:39:18 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:39:18 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:39:27 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:39:27 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:39:27 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:39:27 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:39:34 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:39:34 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:39:35 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:39:35 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:39:38 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:39:38 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:39:39 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:39:39 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:39:48 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:39:48 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:39:48 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:39:48 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:39:55 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:39:55 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:39:56 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:39:56 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:39:59 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:39:59 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:40:00 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:40:00 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:40:10 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:40:10 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:40:10 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:40:10 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:40:16 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:40:16 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:40:17 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:40:17 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:40:21 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:40:21 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:40:21 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:40:21 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:40:31 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:40:31 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:40:31 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:40:31 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:40:37 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:40:37 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:40:38 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:40:38 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:40:42 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:40:42 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:40:42 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:40:42 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:40:52 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:40:52 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:40:52 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:40:52 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:40:59 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:40:59 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:41:00 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:41:00 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:41:03 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:41:03 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:41:04 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:41:04 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:41:13 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:41:13 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:41:13 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:41:13 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:41:20 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:41:20 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:41:21 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:41:21 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:41:24 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:41:24 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:41:25 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:41:25 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:41:34 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:41:34 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:41:34 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:41:34 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:41:41 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:41:41 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:41:42 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:41:42 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:41:45 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:41:45 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:41:46 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:41:46 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:41:55 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:41:55 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:41:55 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:41:55 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:42:02 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:42:02 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:42:03 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:42:03 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:42:06 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:42:06 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:42:07 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:42:07 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:42:16 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:42:16 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:42:16 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:42:16 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:42:23 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:42:23 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:42:24 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:42:24 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:42:27 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:42:27 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:42:28 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:42:28 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:42:38 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:42:38 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:42:38 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:42:38 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:42:44 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:42:44 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:42:45 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:42:45 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:42:49 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:42:49 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:42:49 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:42:49 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:42:59 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:42:59 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:42:59 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:42:59 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:43:05 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:43:05 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:43:06 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:43:06 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:43:10 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:43:10 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:43:10 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:43:10 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:43:20 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:43:20 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:43:20 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:43:20 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:43:27 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:43:27 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:43:28 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:43:28 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:43:31 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:43:31 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:43:32 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:43:32 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:43:41 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:43:41 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:43:41 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:43:41 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:43:48 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:43:48 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:43:49 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:43:49 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:43:52 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:43:52 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:43:53 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:43:53 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:44:02 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:44:02 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:44:02 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:44:02 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:44:09 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:44:09 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:44:10 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:44:10 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:44:13 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:44:13 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:44:14 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:44:14 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:44:23 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:44:23 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:44:23 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:44:23 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:44:30 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:44:30 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:44:31 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:44:31 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:44:34 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:44:34 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:44:35 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:44:35 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:44:44 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:44:44 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:44:45 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:44:45 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:44:51 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:44:51 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:44:52 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:44:52 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:44:56 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:44:56 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:44:56 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:44:56 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:45:06 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:45:06 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-4, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:45:06 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:45:06 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-3, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:45:12 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Connection to node -3 (/10.209.44.114:9092) could not be established. Broker may not be available.
+2025-11-12 10:45:12 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-5, groupId=test3] Bootstrap broker 10.209.44.114:9092 (id: -3 rack: null) disconnected
+2025-11-12 10:45:13 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:45:13 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-1, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:45:17 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Connection to node -2 (/10.209.44.103:9092) could not be established. Broker may not be available.
+2025-11-12 10:45:17 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-6, groupId=test3] Bootstrap broker 10.209.44.103:9092 (id: -2 rack: null) disconnected
+2025-11-12 10:45:17 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:766 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Connection to node -1 (/10.209.44.87:9092) could not be established. Broker may not be available.
+2025-11-12 10:45:17 [WARN ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 NetworkClient.java:1054 org.apache.kafka.clients.NetworkClient [Consumer clientId=consumer-test3-2, groupId=test3] Bootstrap broker 10.209.44.87:9092 (id: -1 rack: null) disconnected
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 AbstractCoordinator.java:966 org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [Consumer clientId=consumer-test3-2, groupId=test3] Resetting generation due to: consumer pro-actively leaving the group
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 AbstractCoordinator.java:966 org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [Consumer clientId=consumer-test3-3, groupId=test3] Resetting generation due to: consumer pro-actively leaving the group
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 AbstractCoordinator.java:966 org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [Consumer clientId=consumer-test3-4, groupId=test3] Resetting generation due to: consumer pro-actively leaving the group
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 AbstractCoordinator.java:966 org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [Consumer clientId=consumer-test3-5, groupId=test3] Resetting generation due to: consumer pro-actively leaving the group
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 AbstractCoordinator.java:966 org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [Consumer clientId=consumer-test3-6, groupId=test3] Resetting generation due to: consumer pro-actively leaving the group
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 AbstractCoordinator.java:988 org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [Consumer clientId=consumer-test3-5, groupId=test3] Request joining group due to: consumer pro-actively leaving the group
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 AbstractCoordinator.java:966 org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [Consumer clientId=consumer-test3-1, groupId=test3] Resetting generation due to: consumer pro-actively leaving the group
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 AbstractCoordinator.java:988 org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [Consumer clientId=consumer-test3-3, groupId=test3] Request joining group due to: consumer pro-actively leaving the group
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 AbstractCoordinator.java:988 org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [Consumer clientId=consumer-test3-6, groupId=test3] Request joining group due to: consumer pro-actively leaving the group
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 KafkaConsumer.java:1075 org.apache.kafka.clients.consumer.KafkaConsumer [Consumer clientId=consumer-test3-5, groupId=test3] Unsubscribed all topics or patterns and assigned partitions
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 AbstractCoordinator.java:988 org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [Consumer clientId=consumer-test3-4, groupId=test3] Request joining group due to: consumer pro-actively leaving the group
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 KafkaConsumer.java:1075 org.apache.kafka.clients.consumer.KafkaConsumer [Consumer clientId=consumer-test3-3, groupId=test3] Unsubscribed all topics or patterns and assigned partitions
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 AbstractCoordinator.java:988 org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [Consumer clientId=consumer-test3-1, groupId=test3] Request joining group due to: consumer pro-actively leaving the group
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 AbstractCoordinator.java:988 org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [Consumer clientId=consumer-test3-2, groupId=test3] Request joining group due to: consumer pro-actively leaving the group
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 KafkaConsumer.java:1075 org.apache.kafka.clients.consumer.KafkaConsumer [Consumer clientId=consumer-test3-6, groupId=test3] Unsubscribed all topics or patterns and assigned partitions
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 KafkaConsumer.java:1075 org.apache.kafka.clients.consumer.KafkaConsumer [Consumer clientId=consumer-test3-4, groupId=test3] Unsubscribed all topics or patterns and assigned partitions
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 KafkaConsumer.java:1075 org.apache.kafka.clients.consumer.KafkaConsumer [Consumer clientId=consumer-test3-1, groupId=test3] Unsubscribed all topics or patterns and assigned partitions
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 KafkaConsumer.java:1075 org.apache.kafka.clients.consumer.KafkaConsumer [Consumer clientId=consumer-test3-2, groupId=test3] Unsubscribed all topics or patterns and assigned partitions
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 AbstractCoordinator.java:966 org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [Consumer clientId=consumer-test3-4, groupId=test3] Resetting generation due to: consumer pro-actively leaving the group
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 AbstractCoordinator.java:966 org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [Consumer clientId=consumer-test3-3, groupId=test3] Resetting generation due to: consumer pro-actively leaving the group
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 AbstractCoordinator.java:966 org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [Consumer clientId=consumer-test3-1, groupId=test3] Resetting generation due to: consumer pro-actively leaving the group
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 AbstractCoordinator.java:966 org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [Consumer clientId=consumer-test3-5, groupId=test3] Resetting generation due to: consumer pro-actively leaving the group
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 AbstractCoordinator.java:966 org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [Consumer clientId=consumer-test3-6, groupId=test3] Resetting generation due to: consumer pro-actively leaving the group
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 AbstractCoordinator.java:988 org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [Consumer clientId=consumer-test3-4, groupId=test3] Request joining group due to: consumer pro-actively leaving the group
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 AbstractCoordinator.java:988 org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [Consumer clientId=consumer-test3-1, groupId=test3] Request joining group due to: consumer pro-actively leaving the group
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 AbstractCoordinator.java:988 org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [Consumer clientId=consumer-test3-3, groupId=test3] Request joining group due to: consumer pro-actively leaving the group
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 AbstractCoordinator.java:988 org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [Consumer clientId=consumer-test3-6, groupId=test3] Request joining group due to: consumer pro-actively leaving the group
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 AbstractCoordinator.java:966 org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [Consumer clientId=consumer-test3-2, groupId=test3] Resetting generation due to: consumer pro-actively leaving the group
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 AbstractCoordinator.java:988 org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [Consumer clientId=consumer-test3-5, groupId=test3] Request joining group due to: consumer pro-actively leaving the group
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 AbstractCoordinator.java:988 org.apache.kafka.clients.consumer.internals.ConsumerCoordinator [Consumer clientId=consumer-test3-2, groupId=test3] Request joining group due to: consumer pro-actively leaving the group
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 Metrics.java:659 org.apache.kafka.common.metrics.Metrics Metrics scheduler closed
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 Metrics.java:659 org.apache.kafka.common.metrics.Metrics Metrics scheduler closed
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 Metrics.java:659 org.apache.kafka.common.metrics.Metrics Metrics scheduler closed
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 Metrics.java:659 org.apache.kafka.common.metrics.Metrics Metrics scheduler closed
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 Metrics.java:663 org.apache.kafka.common.metrics.Metrics Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 Metrics.java:663 org.apache.kafka.common.metrics.Metrics Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 Metrics.java:663 org.apache.kafka.common.metrics.Metrics Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 Metrics.java:663 org.apache.kafka.common.metrics.Metrics Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 Metrics.java:659 org.apache.kafka.common.metrics.Metrics Metrics scheduler closed
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 Metrics.java:669 org.apache.kafka.common.metrics.Metrics Metrics reporters closed
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 Metrics.java:669 org.apache.kafka.common.metrics.Metrics Metrics reporters closed
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 Metrics.java:663 org.apache.kafka.common.metrics.Metrics Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 Metrics.java:669 org.apache.kafka.common.metrics.Metrics Metrics reporters closed
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 Metrics.java:659 org.apache.kafka.common.metrics.Metrics Metrics scheduler closed
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 Metrics.java:669 org.apache.kafka.common.metrics.Metrics Metrics reporters closed
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 Metrics.java:663 org.apache.kafka.common.metrics.Metrics Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 Metrics.java:669 org.apache.kafka.common.metrics.Metrics Metrics reporters closed
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 Metrics.java:669 org.apache.kafka.common.metrics.Metrics Metrics reporters closed
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 AppInfoParser.java:83 org.apache.kafka.common.utils.AppInfoParser App info kafka.consumer for consumer-test3-5 unregistered
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1 LogAccessor.java:292 org.springframework.kafka.listener.KafkaMessageListenerContainer test3: Consumer stopped
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 AppInfoParser.java:83 org.apache.kafka.common.utils.AppInfoParser App info kafka.consumer for consumer-test3-2 unregistered
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1 LogAccessor.java:292 org.springframework.kafka.listener.KafkaMessageListenerContainer test3: Consumer stopped
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 AppInfoParser.java:83 org.apache.kafka.common.utils.AppInfoParser App info kafka.consumer for consumer-test3-4 unregistered
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1 LogAccessor.java:292 org.springframework.kafka.listener.KafkaMessageListenerContainer test3: Consumer stopped
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 AppInfoParser.java:83 org.apache.kafka.common.utils.AppInfoParser App info kafka.consumer for consumer-test3-3 unregistered
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1 LogAccessor.java:292 org.springframework.kafka.listener.KafkaMessageListenerContainer test3: Consumer stopped
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 AppInfoParser.java:83 org.apache.kafka.common.utils.AppInfoParser App info kafka.consumer for consumer-test3-1 unregistered
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1 LogAccessor.java:292 org.springframework.kafka.listener.KafkaMessageListenerContainer test3: Consumer stopped
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 AppInfoParser.java:83 org.apache.kafka.common.utils.AppInfoParser App info kafka.consumer for consumer-test3-6 unregistered
+2025-11-12 10:45:23 [INFO ] org.springframework.kafka.KafkaListenerEndpointContainer#0-5-C-1 LogAccessor.java:292 org.springframework.kafka.listener.KafkaMessageListenerContainer test3: Consumer stopped
+2025-11-12 10:45:23 [INFO ] SpringApplicationShutdownHook DruidDataSource.java:2032 com.alibaba.druid.pool.DruidDataSource {dataSource-1} closing ...
+2025-11-12 10:45:23 [INFO ] SpringApplicationShutdownHook DruidDataSource.java:2104 com.alibaba.druid.pool.DruidDataSource {dataSource-1} closed
+2025-11-12 10:45:30 [INFO ] main StartupInfoLogger.java:55 com.mobile.outalarm2.OutAlarm2Application Starting OutAlarm2Application using Java 1.8.0_191 on zhenghao with PID 33088 (D:\work\2025\08\outalarm2-test\target\classes started by 47480 in D:\work\2025\08\outalarm2-test)
+2025-11-12 10:45:30 [INFO ] main SpringApplication.java:651 com.mobile.outalarm2.OutAlarm2Application The following 1 profile is active: "test"
+2025-11-12 10:45:30 [INFO ] main TomcatWebServer.java:108 org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat initialized with port(s): 8090 (http)
+2025-11-12 10:45:30 [INFO ] main DirectJDKLog.java:173 org.apache.catalina.core.AprLifecycleListener Loaded Apache Tomcat Native library [1.3.1] using APR version [1.7.4].
+2025-11-12 10:45:30 [INFO ] main DirectJDKLog.java:173 org.apache.catalina.core.AprLifecycleListener APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2025-11-12 10:45:30 [INFO ] main DirectJDKLog.java:173 org.apache.catalina.core.AprLifecycleListener APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2025-11-12 10:45:30 [INFO ] main DirectJDKLog.java:173 org.apache.catalina.core.AprLifecycleListener OpenSSL successfully initialized [OpenSSL 3.0.14 4 Jun 2024]
+2025-11-12 10:45:30 [INFO ] main DirectJDKLog.java:173 org.apache.coyote.http11.Http11NioProtocol Initializing ProtocolHandler ["http-nio-8090"]
+2025-11-12 10:45:30 [INFO ] main DirectJDKLog.java:173 org.apache.catalina.core.StandardService Starting service [Tomcat]
+2025-11-12 10:45:30 [INFO ] main DirectJDKLog.java:173 org.apache.catalina.core.StandardEngine Starting Servlet engine: [Apache Tomcat/9.0.68]
+2025-11-12 10:45:30 [INFO ] main DirectJDKLog.java:173 org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Initializing Spring embedded WebApplicationContext
+2025-11-12 10:45:30 [INFO ] main ServletWebServerApplicationContext.java:290 org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext Root WebApplicationContext: initialization completed in 758 ms
+2025-11-12 10:45:31 [INFO ] main DruidDataSourceAutoConfigure.java:56 com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure Init DruidDataSource
+2025-11-12 10:45:31 [INFO ] main DruidDataSource.java:985 com.alibaba.druid.pool.DruidDataSource {dataSource-1} inited
+2025-11-12 10:45:31 [INFO ] main AbstractConfig.java:376 org.apache.kafka.clients.consumer.ConsumerConfig ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = earliest
+	bootstrap.servers = [10.209.44.87:9092, 10.209.44.103:9092, 10.209.44.114:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-test3-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 5000
+	fetch.min.bytes = 1895825408
+	group.id = test3
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-11-12 10:45:31 [INFO ] main AppInfoParser.java:119 org.apache.kafka.common.utils.AppInfoParser Kafka version: 3.0.2
+2025-11-12 10:45:31 [INFO ] main AppInfoParser.java:120 org.apache.kafka.common.utils.AppInfoParser Kafka commitId: 25b1aea02e37da14
+2025-11-12 10:45:31 [INFO ] main AppInfoParser.java:121 org.apache.kafka.common.utils.AppInfoParser Kafka startTimeMs: 1762915531984
+2025-11-12 10:45:31 [INFO ] main KafkaConsumer.java:966 org.apache.kafka.clients.consumer.KafkaConsumer [Consumer clientId=consumer-test3-1, groupId=test3] Subscribed to topic(s): asap_superset
+2025-11-12 10:45:31 [INFO ] main AbstractConfig.java:376 org.apache.kafka.clients.consumer.ConsumerConfig ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = earliest
+	bootstrap.servers = [10.209.44.87:9092, 10.209.44.103:9092, 10.209.44.114:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-test3-2
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 5000
+	fetch.min.bytes = 1895825408
+	group.id = test3
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-11-12 10:45:31 [INFO ] main AppInfoParser.java:119 org.apache.kafka.common.utils.AppInfoParser Kafka version: 3.0.2
+2025-11-12 10:45:31 [INFO ] main AppInfoParser.java:120 org.apache.kafka.common.utils.AppInfoParser Kafka commitId: 25b1aea02e37da14
+2025-11-12 10:45:31 [INFO ] main AppInfoParser.java:121 org.apache.kafka.common.utils.AppInfoParser Kafka startTimeMs: 1762915531997
+2025-11-12 10:45:31 [INFO ] main KafkaConsumer.java:966 org.apache.kafka.clients.consumer.KafkaConsumer [Consumer clientId=consumer-test3-2, groupId=test3] Subscribed to topic(s): asap_superset
+2025-11-12 10:45:31 [INFO ] main AbstractConfig.java:376 org.apache.kafka.clients.consumer.ConsumerConfig ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = earliest
+	bootstrap.servers = [10.209.44.87:9092, 10.209.44.103:9092, 10.209.44.114:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-test3-3
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 5000
+	fetch.min.bytes = 1895825408
+	group.id = test3
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-11-12 10:45:32 [INFO ] main AppInfoParser.java:119 org.apache.kafka.common.utils.AppInfoParser Kafka version: 3.0.2
+2025-11-12 10:45:32 [INFO ] main AppInfoParser.java:120 org.apache.kafka.common.utils.AppInfoParser Kafka commitId: 25b1aea02e37da14
+2025-11-12 10:45:32 [INFO ] main AppInfoParser.java:121 org.apache.kafka.common.utils.AppInfoParser Kafka startTimeMs: 1762915532003
+2025-11-12 10:45:32 [INFO ] main KafkaConsumer.java:966 org.apache.kafka.clients.consumer.KafkaConsumer [Consumer clientId=consumer-test3-3, groupId=test3] Subscribed to topic(s): asap_superset
+2025-11-12 10:45:32 [INFO ] main AbstractConfig.java:376 org.apache.kafka.clients.consumer.ConsumerConfig ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = earliest
+	bootstrap.servers = [10.209.44.87:9092, 10.209.44.103:9092, 10.209.44.114:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-test3-4
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 5000
+	fetch.min.bytes = 1895825408
+	group.id = test3
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-11-12 10:45:32 [INFO ] main AppInfoParser.java:119 org.apache.kafka.common.utils.AppInfoParser Kafka version: 3.0.2
+2025-11-12 10:45:32 [INFO ] main AppInfoParser.java:120 org.apache.kafka.common.utils.AppInfoParser Kafka commitId: 25b1aea02e37da14
+2025-11-12 10:45:32 [INFO ] main AppInfoParser.java:121 org.apache.kafka.common.utils.AppInfoParser Kafka startTimeMs: 1762915532014
+2025-11-12 10:45:32 [INFO ] main KafkaConsumer.java:966 org.apache.kafka.clients.consumer.KafkaConsumer [Consumer clientId=consumer-test3-4, groupId=test3] Subscribed to topic(s): asap_superset
+2025-11-12 10:45:32 [INFO ] main AbstractConfig.java:376 org.apache.kafka.clients.consumer.ConsumerConfig ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = earliest
+	bootstrap.servers = [10.209.44.87:9092, 10.209.44.103:9092, 10.209.44.114:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-test3-5
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 5000
+	fetch.min.bytes = 1895825408
+	group.id = test3
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-11-12 10:45:32 [INFO ] main AppInfoParser.java:119 org.apache.kafka.common.utils.AppInfoParser Kafka version: 3.0.2
+2025-11-12 10:45:32 [INFO ] main AppInfoParser.java:120 org.apache.kafka.common.utils.AppInfoParser Kafka commitId: 25b1aea02e37da14
+2025-11-12 10:45:32 [INFO ] main AppInfoParser.java:121 org.apache.kafka.common.utils.AppInfoParser Kafka startTimeMs: 1762915532019
+2025-11-12 10:45:32 [INFO ] main KafkaConsumer.java:966 org.apache.kafka.clients.consumer.KafkaConsumer [Consumer clientId=consumer-test3-5, groupId=test3] Subscribed to topic(s): asap_superset
+2025-11-12 10:45:32 [INFO ] main AbstractConfig.java:376 org.apache.kafka.clients.consumer.ConsumerConfig ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 1000
+	auto.offset.reset = earliest
+	bootstrap.servers = [10.209.44.87:9092, 10.209.44.103:9092, 10.209.44.114:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-test3-6
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 5000
+	fetch.min.bytes = 1895825408
+	group.id = test3
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 1000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2025-11-12 10:45:32 [INFO ] main AppInfoParser.java:119 org.apache.kafka.common.utils.AppInfoParser Kafka version: 3.0.2
+2025-11-12 10:45:32 [INFO ] main AppInfoParser.java:120 org.apache.kafka.common.utils.AppInfoParser Kafka commitId: 25b1aea02e37da14
+2025-11-12 10:45:32 [INFO ] main AppInfoParser.java:121 org.apache.kafka.common.utils.AppInfoParser Kafka startTimeMs: 1762915532025
+2025-11-12 10:45:32 [INFO ] main KafkaConsumer.java:966 org.apache.kafka.clients.consumer.KafkaConsumer [Consumer clientId=consumer-test3-6, groupId=test3] Subscribed to topic(s): asap_superset
+2025-11-12 10:45:32 [INFO ] main DirectJDKLog.java:173 org.apache.coyote.http11.Http11NioProtocol Starting ProtocolHandler ["http-nio-8090"]
+2025-11-12 10:45:32 [INFO ] main TomcatWebServer.java:220 org.springframework.boot.web.embedded.tomcat.TomcatWebServer Tomcat started on port(s): 8090 (http) with context path ''
+2025-11-12 10:45:32 [INFO ] main StartupInfoLogger.java:61 com.mobile.outalarm2.OutAlarm2Application Started OutAlarm2Application in 2.161 seconds (JVM running for 2.88)

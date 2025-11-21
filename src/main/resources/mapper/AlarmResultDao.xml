@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+
+<mapper namespace="com.mobile.outalarm2.dao.AlarmResultDao">
+
+    <insert id="insertBatch" parameterType="java.util.List">
+        insert into public.${tableName} (event_name,create_time,device_type,src_ip,dst_ip,payload)
+        values
+        <foreach collection="list" item="entity" separator=",">
+                (#{entity.eventName},#{entity.createTime},#{entity.deviceType},#{entity.srcIp},#{entity.dstIp},#{entity.payload})
+        </foreach>
+    </insert>
+
+    <insert id="insert">
+        insert into public.${tableName} (event_name,create_time)
+        VALUES    (#{entity.eventName},#{entity.createTime});
+    </insert>
+
+    <delete id="deleteTable">
+        drop table public.${tableName};
+    </delete>
+
+    <select id="selectAllKey" resultType="com.mobile.outalarm2.db.AlarmResult">
+        SELECT
+            "key"
+        FROM
+            public.${tableName}
+    </select>
+
+    <select id="selectAllAlarmByKey" resultType="com.mobile.outalarm2.db.AlarmResult">
+        SELECT
+            "key",
+            "result",
+            ds,
+            src_ip,
+            dst_ip,
+            event_name,
+            last_time
+        FROM
+            public.${tableName}
+        WHERE
+            "key" = #{key}
+    </select>
+
+    <update id="createTable">
+        CREATE TABLE IF NOT EXISTS public.${tableName} (
+                                                           event_name varchar NULL,
+                                                           create_time varchar NULL,
+                                                           device_type varchar NULL,
+                                                            src_ip varchar NULL,
+                                                           dst_ip varchar NULL,
+                                                           payload varchar NULL
+
+        )
+    </update>
+</mapper>
+
