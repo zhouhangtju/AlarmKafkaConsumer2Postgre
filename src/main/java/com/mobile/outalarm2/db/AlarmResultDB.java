@@ -22,4 +22,16 @@ public class AlarmResultDB {
     private String srcIp;
     @TableField("dst_ip")
     private String dstIp;
+
+    @TableField("resquest_payload")
+    private String resquestPayload;
+
+    @TableField("resquest_message")
+    private String resquestMessage;
+
+    @TableField("response_code")
+    private String responseCode;
+
+    @TableField("response_message")
+    private String responseMessage;
 }

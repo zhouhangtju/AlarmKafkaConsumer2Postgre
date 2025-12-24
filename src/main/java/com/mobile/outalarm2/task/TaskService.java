@@ -44,7 +44,7 @@ public class TaskService{
         sdf.setTimeZone(TimeZone.getTimeZone("Asia/Shanghai")); // 设置为东八区
         Date now = new Date();
         // 格式化并打印日期
-        String dd = sdf.format(DateUtils.addDays(now, -7));
+        String dd = sdf.format(DateUtils.addDays(now, -14));
      //   alarmResultAlldayDao.deleteTable("alarm_result_day_"+dd);
         alarmResultDao.deleteTable("alarm_"+dd);
     }

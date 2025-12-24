@@ -25,4 +25,18 @@ public class AlarmResult {
     private String srcIp;
     @JSONField(name = "DST_IP")
     private String dstIp;
+
+    @JSONField(name = "REQUEST_PAYLOAD")
+    private String resquestPayload;
+
+    @JSONField(name = "RESPONSE_MESSAGE")
+    private String resquestMessage;
+
+    @JSONField(name = "RESPONSE_CODE")
+    private String responseCode;
+
+    @JSONField(name = "RESPONSE_MESSAGE")
+    private String responseMessage;
+
+
 }

@@ -43,19 +43,24 @@ public class KafkaConsumer {
                 //  log.info("获取到kakfa消息条数{}", messages.size());
                 for (int i = 0; i < messages.size(); i++) {
                     AlarmResult alarm = JSON.parseObject(messages.get(i), AlarmResult.class);
-                    String dateHourPart = alarm.getCreateTime().substring(0, 13);
-                    // 去除所有非数字字符，得到 "2025082516"
-                    String ds = dateHourPart.replaceAll("[^0-9]", "");
-                    tableDs = ds.substring(0, 8);
-                    AlarmResultDB resultDB = new AlarmResultDB();
-                    resultDB.setCreateTime(alarm.getCreateTime());
-                    resultDB.setEventName(alarm.getEventName());
-                    resultDB.setDeviceType(alarm.getDeviceType());
-                    resultDB.setSrcIp(MyStringUtils.removeNullByte(alarm.getSrcIp()));
-                    resultDB.setDstIp(MyStringUtils.removeNullByte(alarm.getDstIp()));
-                    resultDB.setPayload(MyStringUtils.removeNullByte(alarm.getPayload()));
-                    dateGroupMap.computeIfAbsent(tableDs, k -> new ArrayList<>()).add(resultDB);
-                    // alarmResultDao.insert(resultDB, "alarm_" + tableDs);
+                    if ("Nsfocus_FLOW_DCN".equals(alarm.getDeviceType())) {
+                        String dateHourPart = alarm.getCreateTime().substring(0, 13);
+                        // 去除所有非数字字符，得到 "2025082516"
+                        String ds = dateHourPart.replaceAll("[^0-9]", "");
+                        tableDs = ds.substring(0, 8);
+                        AlarmResultDB resultDB = new AlarmResultDB();
+                        resultDB.setCreateTime(alarm.getCreateTime());
+                        resultDB.setEventName(alarm.getEventName());
+                        resultDB.setDeviceType(alarm.getDeviceType());
+                        resultDB.setSrcIp(MyStringUtils.removeNullByte(alarm.getSrcIp()));
+                        resultDB.setDstIp(MyStringUtils.removeNullByte(alarm.getDstIp()));
+                        resultDB.setPayload(MyStringUtils.removeNullByte(alarm.getPayload()));
+                        resultDB.setResponseCode(MyStringUtils.removeNullByte(alarm.getResponseCode()));
+                        resultDB.setResponseMessage(MyStringUtils.removeNullByte(alarm.getResponseMessage()));
+                        resultDB.setResquestMessage(MyStringUtils.removeNullByte(alarm.getResquestMessage()));
+                        resultDB.setResquestPayload(MyStringUtils.removeNullByte(alarm.getResquestPayload()));
+                        dateGroupMap.computeIfAbsent(tableDs, k -> new ArrayList<>()).add(resultDB);
+                    }
                 }
                 // 按日期分组批量插入
                 for (Map.Entry<String, List<AlarmResultDB>> entry : dateGroupMap.entrySet()) {
