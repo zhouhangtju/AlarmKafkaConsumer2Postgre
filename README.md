@@ -1,0 +1,1 @@
+接入消费kafak3000w原始日志，直接入postgre
