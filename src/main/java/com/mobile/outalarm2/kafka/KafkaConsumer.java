@@ -57,8 +57,8 @@ public class KafkaConsumer {
                         resultDB.setPayload(MyStringUtils.removeNullByte(alarm.getPayload()));
                         resultDB.setResponseCode(MyStringUtils.removeNullByte(alarm.getResponseCode()));
                         resultDB.setResponseMessage(MyStringUtils.removeNullByte(alarm.getResponseMessage()));
-                        resultDB.setResquestMessage(MyStringUtils.removeNullByte(alarm.getResquestMessage()));
-                        resultDB.setResquestPayload(MyStringUtils.removeNullByte(alarm.getResquestPayload()));
+                        resultDB.setRequestMessage(MyStringUtils.removeNullByte(alarm.getRequestMessage()));
+                        resultDB.setRequestPayload(MyStringUtils.removeNullByte(alarm.getRequestPayload()));
                         dateGroupMap.computeIfAbsent(tableDs, k -> new ArrayList<>()).add(resultDB);
                     }
                 }

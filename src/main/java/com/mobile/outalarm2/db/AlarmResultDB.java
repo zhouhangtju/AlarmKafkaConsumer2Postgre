@@ -23,11 +23,11 @@ public class AlarmResultDB {
     @TableField("dst_ip")
     private String dstIp;
 
-    @TableField("resquest_payload")
-    private String resquestPayload;
+    @TableField("request_payload")
+    private String requestPayload;
 
-    @TableField("resquest_message")
-    private String resquestMessage;
+    @TableField("request_message")
+    private String requestMessage;
 
     @TableField("response_code")
     private String responseCode;
