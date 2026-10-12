@@ -38,5 +38,13 @@ public class AlarmResult {
     @JSONField(name = "RESPONSE_MESSAGE")
     private String responseMessage;
 
+    @JSONField(name = "SRC_PORT")
+    private String srcPort;
+
+    @JSONField(name = "DST_PORT")
+    private String dstPort;
+
+
+
 
 }

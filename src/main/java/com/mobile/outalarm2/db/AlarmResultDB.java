@@ -34,4 +34,10 @@ public class AlarmResultDB {
 
     @TableField("response_message")
     private String responseMessage;
+
+    @TableField("src_port")
+    private String srcPort;
+
+    @TableField("dst_port")
+    private String dstPort;
 }
